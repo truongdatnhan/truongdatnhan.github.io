@@ -2,7 +2,7 @@ import * as util from './util.js';
 
 const ITEM_PER_PAGE = 12;
 
-const category = async () => {
+export const category = async () => {
   const res = await fetch("/data/category.json");
   const categories = await res.json();
 
@@ -132,7 +132,6 @@ export default async function shop(url) {
     activatePage
   );
 
-  console.log(activatePage, totalPage);
   const categories = await category();
   const products = item(paginatedProducts);
   const pages = pagination(activatePage, totalPage, url);

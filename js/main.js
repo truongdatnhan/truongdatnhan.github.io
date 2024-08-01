@@ -1,5 +1,5 @@
 import { routes, navigate } from "./route.js";
-import * as util from './util.js';
+import * as util from "./util.js";
 
 (async function ($) {
   "use strict";
@@ -52,29 +52,78 @@ import * as util from './util.js';
     return false;
   });
 
-  // Product Quantity
-  $(".quantity button").on("click", function () {
-    var button = $(this);
-    var oldValue = button.parent().parent().find("input").val();
-    if (button.hasClass("btn-plus")) {
-      var newVal = parseFloat(oldValue) + 1;
-    } else {
-      if (oldValue > 0) {
-        var newVal = parseFloat(oldValue) - 1;
+  const quantityActivate = () => {
+    // Product Quantity
+    $(".quantity button").on("click", function () {
+      var button = $(this);
+      var oldValue = button.parent().parent().find("input").val();
+      if (button.hasClass("btn-plus")) {
+        var newVal = parseFloat(oldValue) + 1;
       } else {
-        newVal = 0;
+        if (oldValue > 0) {
+          var newVal = parseFloat(oldValue) - 1;
+        } else {
+          newVal = 0;
+        }
       }
-    }
-    button.parent().parent().find("input").val(newVal);
-  });
+      button.parent().parent().find("input").val(newVal);
+    });
+  };
 
+  const updateCartQuantity = (length) => {
+    const cartElement = document.getElementById("cartQuantity");
+    if (length === null || length === undefined) {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cartElement.innerHTML = cart.length;
+    } else {
+      cartElement.innerHTML = length;
+    }
+  };
+
+  updateCartQuantity();
+
+  const addToCart = () => {
+    document.getElementById("addToCart").addEventListener("click", async () => {
+      const res = await fetch("/data/product.json");
+      const resData = await res.json();
+      const id = $("#itemProductId").val();
+      const itemDetail = resData.find((x) => x.id == id);
+
+      if (itemDetail === null || itemDetail === undefined) {
+        return;
+      }
+
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      const cartItem = cart.find((x) => x.id === itemDetail.id);
+
+      if (cartItem === null || cartItem === undefined) {
+        // not exists in cart -> add
+        const cartObject = {
+          id: itemDetail.id,
+          images: itemDetail.images,
+          price: itemDetail.price,
+          quantity: parseInt($("#quantity").val()),
+          total: itemDetail.price * $("#quantity").val(),
+        };
+        cart.push(cartObject);
+        localStorage.setItem("cart", JSON.stringify(cart));
+      } else {
+        cartItem.quantity += parseInt($("#quantity").val()); // reference so no need to push
+        cartItem.total = cartItem.quantity * cartItem.price;
+        localStorage.setItem("cart", JSON.stringify(cart));
+      }
+      updateCartQuantity(cart.length);
+    });
+  };
 
   window.navigation.addEventListener("navigate", async (event) => {
     event.preventDefault();
     const path = util.url(event.destination.url).pathname;
     const segments = path.split("/").filter((segment) => segment.length > 0);
 
-    if (segments.length === 0) { // home page
+    if (segments.length === 0) {
+      // home page
       navigate(await routes[0].view());
       activateTestimonial();
     } else {
@@ -88,13 +137,16 @@ import * as util from './util.js';
       }
 
       if (route.requireSegment) {
-        if (segments.length < 2) { // not supply id
+        if (segments.length < 2) {
+          // not supply id
           navigate(routes[6].view()); // 404 page
           return;
         } else {
           navigate(await route.view(segments[1]));
+          quantityActivate();
+          addToCart();
         }
-      } else if(route.path === '/shop') {
+      } else if (route.path === "/shop") {
         navigate(await route.view(util.url(event.destination.url)));
       } else {
         navigate(await route.view());
