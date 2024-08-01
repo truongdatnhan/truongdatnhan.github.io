@@ -70,6 +70,18 @@ import * as util from "./util.js";
     });
   };
 
+  const deleteItemCart = () => {
+    $("tr button").on("click", function() {
+      const button = $(this);
+      const tr = this.closest('tr');
+      const id = tr.dataset.id;
+
+      const cart = JSON.parse(localStorage.getItem("cart")).filter(x => x.id != id);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      window.location.href = '/cart';
+    });
+  }
+
   const updateCartQuantity = (length) => {
     const cartElement = document.getElementById("cartQuantity");
     if (length === null || length === undefined) {
@@ -79,8 +91,6 @@ import * as util from "./util.js";
       cartElement.innerHTML = length;
     }
   };
-
-  updateCartQuantity();
 
   const addToCart = () => {
     document.getElementById("addToCart").addEventListener("click", async () => {
@@ -101,6 +111,7 @@ import * as util from "./util.js";
         // not exists in cart -> add
         const cartObject = {
           id: itemDetail.id,
+          name: itemDetail.name,
           images: itemDetail.images,
           price: itemDetail.price,
           quantity: parseInt($("#quantity").val()),
@@ -121,7 +132,7 @@ import * as util from "./util.js";
     event.preventDefault();
     const path = util.url(event.destination.url).pathname;
     const segments = path.split("/").filter((segment) => segment.length > 0);
-
+    updateCartQuantity();
     if (segments.length === 0) {
       // home page
       navigate(await routes[0].view());
@@ -148,6 +159,9 @@ import * as util from "./util.js";
         }
       } else if (route.path === "/shop") {
         navigate(await route.view(util.url(event.destination.url)));
+      } else if (route.path === '/cart') {
+        navigate(await route.view());
+        deleteItemCart();
       } else {
         navigate(await route.view());
       }
