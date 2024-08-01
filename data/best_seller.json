@@ -1,0 +1,74 @@
+[
+    {
+        "id": 18,
+        "name": "Honeydew",
+        "category": "Melon",
+        "images": "img/best-product-6.jpg",
+        "description": "A sweet and refreshing melon with a pale green flesh.",
+        "price": 2.8,
+        "uom": "kg"
+    },
+    {
+        "id": 15,
+        "name": "Grapefruit",
+        "category": "Citrus",
+        "images": "img/best-product-3.jpg",
+        "description": "A large citrus fruit with a tangy flavor.",
+        "price": 3.2,
+        "uom": "kg"
+    },
+    {
+        "id": 30,
+        "name": "Casaba Melon",
+        "category": "Melon",
+        "images": "img/best-product-6.jpg",
+        "description": "A sweet and mild-flavored melon.",
+        "price": 3.0,
+        "uom": "kg"
+    },
+    {
+        "id": 22,
+        "name": "Papaya",
+        "category": "Tropical",
+        "images": "img/best-product-4.jpg",
+        "description": "A tropical fruit with sweet orange flesh.",
+        "price": 3.9,
+        "uom": "kg"
+    },
+    {
+        "id": 28,
+        "name": "Guava",
+        "category": "Tropical",
+        "images": "img/best-product-4.jpg",
+        "description": "A tropical fruit with a sweet and aromatic flavor.",
+        "price": 4.0,
+        "uom": "kg"
+    },
+    {
+        "id": 21,
+        "name": "Lime",
+        "category": "Citrus",
+        "images": "img/best-product-3.jpg",
+        "description": "A small, green citrus fruit with a tart flavor.",
+        "price": 2.1,
+        "uom": "kg"
+    },
+    {
+        "id": 17,
+        "name": "Plum",
+        "category": "Stone Fruit",
+        "images": "img/best-product-5.jpg",
+        "description": "A sweet and juicy fruit with a smooth skin.",
+        "price": 4.0,
+        "uom": "kg"
+    },
+    {
+        "id": 42,
+        "name": "Santa Claus Melon",
+        "category": "Melon",
+        "images": "img/best-product-6.jpg",
+        "description": "A sweet and juicy melon that's perfect for summer.",
+        "price": 3.2,
+        "uom": "kg"
+    }
+]

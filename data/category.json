@@ -1,0 +1,26 @@
+[
+    {
+        "category": "Pome",
+        "item_count": 7
+    },
+    {
+        "category": "Berry",
+        "item_count": 8
+    },
+    {
+        "category": "Citrus",
+        "item_count": 9
+    },
+    {
+        "category": "Tropical",
+        "item_count": 9
+    },
+    {
+        "category": "Stone Fruit",
+        "item_count": 9
+    },
+    {
+        "category": "Melon",
+        "item_count": 8
+    }
+]

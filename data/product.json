@@ -1,0 +1,452 @@
+[
+    {
+        "id": 1,
+        "name": "Apple",
+        "category": "Pome",
+        "images": "img/fruite-item-1.jpg",
+        "description": "A sweet, crisp fruit that's perfect for snacking.",
+        "price": 3.5,
+        "uom": "kg"
+    },
+    {
+        "id": 2,
+        "name": "Strawberry",
+        "category": "Berry",
+        "images": "img/best-product-1.jpg",
+        "description": "A juicy, red berry that is delicious and nutritious.",
+        "price": 5.0,
+        "uom": "kg"
+    },
+    {
+        "id": 3,
+        "name": "Orange",
+        "category": "Citrus",
+        "images": "img/best-product-2.jpg",
+        "description": "A tangy and sweet citrus fruit, great for juicing.",
+        "price": 2.8,
+        "uom": "kg"
+    },
+    {
+        "id": 4,
+        "name": "Mango",
+        "category": "Tropical",
+        "images": "img/best-product-3.jpg",
+        "description": "A tropical delight that's both sweet and creamy.",
+        "price": 6.0,
+        "uom": "kg"
+    },
+    {
+        "id": 5,
+        "name": "Peach",
+        "category": "Stone Fruit",
+        "images": "img/best-product-4.jpg",
+        "description": "A juicy and sweet stone fruit with a fuzzy skin.",
+        "price": 4.2,
+        "uom": "kg"
+    },
+    {
+        "id": 6,
+        "name": "Watermelon",
+        "category": "Melon",
+        "images": "img/best-product-5.jpg",
+        "description": "A refreshing melon that's perfect for hot days.",
+        "price": 1.5,
+        "uom": "kg"
+    },
+    {
+        "id": 7,
+        "name": "Pear",
+        "category": "Pome",
+        "images": "img/fruite-item-2.jpg",
+        "description": "A sweet and juicy fruit with a soft texture.",
+        "price": 3.7,
+        "uom": "kg"
+    },
+    {
+        "id": 8,
+        "name": "Blueberry",
+        "category": "Berry",
+        "images": "img/best-product-6.jpg",
+        "description": "A small, sweet, and tangy berry that's perfect for snacking.",
+        "price": 6.5,
+        "uom": "kg"
+    },
+    {
+        "id": 9,
+        "name": "Lemon",
+        "category": "Citrus",
+        "images": "img/fruite-item-3.jpg",
+        "description": "A sour citrus fruit perfect for adding zest to dishes.",
+        "price": 2.0,
+        "uom": "kg"
+    },
+    {
+        "id": 10,
+        "name": "Pineapple",
+        "category": "Tropical",
+        "images": "img/fruite-item-4.jpg",
+        "description": "A tropical fruit with a sweet and tart flavor.",
+        "price": 3.0,
+        "uom": "kg"
+    },
+    {
+        "id": 11,
+        "name": "Cherry",
+        "category": "Stone Fruit",
+        "images": "img/fruite-item-5.jpg",
+        "description": "A small, sweet, and juicy stone fruit.",
+        "price": 7.0,
+        "uom": "kg"
+    },
+    {
+        "id": 12,
+        "name": "Cantaloupe",
+        "category": "Melon",
+        "images": "img/fruite-item-6.jpg",
+        "description": "A sweet and juicy melon with a distinctive flavor.",
+        "price": 2.5,
+        "uom": "kg"
+    },
+    {
+        "id": 13,
+        "name": "Quince",
+        "category": "Pome",
+        "images": "img/best-product-1.jpg",
+        "description": "A fragrant fruit often used in cooking and preserves.",
+        "price": 4.8,
+        "uom": "kg"
+    },
+    {
+        "id": 14,
+        "name": "Raspberry",
+        "category": "Berry",
+        "images": "img/best-product-2.jpg",
+        "description": "A sweet and tart berry that's perfect for desserts.",
+        "price": 8.0,
+        "uom": "kg"
+    },
+    {
+        "id": 15,
+        "name": "Grapefruit",
+        "category": "Citrus",
+        "images": "img/best-product-3.jpg",
+        "description": "A large citrus fruit with a tangy flavor.",
+        "price": 3.2,
+        "uom": "kg"
+    },
+    {
+        "id": 16,
+        "name": "Banana",
+        "category": "Tropical",
+        "images": "img/best-product-4.jpg",
+        "description": "A sweet and creamy fruit that's great for snacking.",
+        "price": 1.2,
+        "uom": "kg"
+    },
+    {
+        "id": 17,
+        "name": "Plum",
+        "category": "Stone Fruit",
+        "images": "img/best-product-5.jpg",
+        "description": "A sweet and juicy fruit with a smooth skin.",
+        "price": 4.0,
+        "uom": "kg"
+    },
+    {
+        "id": 18,
+        "name": "Honeydew",
+        "category": "Melon",
+        "images": "img/best-product-6.jpg",
+        "description": "A sweet and refreshing melon with a pale green flesh.",
+        "price": 2.8,
+        "uom": "kg"
+    },
+    {
+        "id": 19,
+        "name": "Nashi Pear",
+        "category": "Pome",
+        "images": "img/fruite-item-1.jpg",
+        "description": "A crisp and juicy Asian pear.",
+        "price": 5.3,
+        "uom": "kg"
+    },
+    {
+        "id": 20,
+        "name": "Blackberry",
+        "category": "Berry",
+        "images": "img/fruite-item-2.jpg",
+        "description": "A sweet and tart berry with a deep purple color.",
+        "price": 7.5,
+        "uom": "kg"
+    },
+    {
+        "id": 21,
+        "name": "Lime",
+        "category": "Citrus",
+        "images": "img/fruite-item-3.jpg",
+        "description": "A small, green citrus fruit with a tart flavor.",
+        "price": 2.1,
+        "uom": "kg"
+    },
+    {
+        "id": 22,
+        "name": "Papaya",
+        "category": "Tropical",
+        "images": "img/fruite-item-4.jpg",
+        "description": "A tropical fruit with sweet orange flesh.",
+        "price": 3.9,
+        "uom": "kg"
+    },
+    {
+        "id": 23,
+        "name": "Apricot",
+        "category": "Stone Fruit",
+        "images": "img/fruite-item-5.jpg",
+        "description": "A sweet and slightly tart stone fruit.",
+        "price": 4.5,
+        "uom": "kg"
+    },
+    {
+        "id": 24,
+        "name": "Galia Melon",
+        "category": "Melon",
+        "images": "img/fruite-item-6.jpg",
+        "description": "A sweet and aromatic melon.",
+        "price": 2.7,
+        "uom": "kg"
+    },
+    {
+        "id": 25,
+        "name": "Asian Pear",
+        "category": "Pome",
+        "images": "img/best-product-1.jpg",
+        "description": "A crisp and sweet fruit with a juicy texture.",
+        "price": 5.0,
+        "uom": "kg"
+    },
+    {
+        "id": 26,
+        "name": "Cranberry",
+        "category": "Berry",
+        "images": "img/best-product-2.jpg",
+        "description": "A tart berry often used in sauces and desserts.",
+        "price": 9.0,
+        "uom": "kg"
+    },
+    {
+        "id": 27,
+        "name": "Tangerine",
+        "category": "Citrus",
+        "images": "img/best-product-3.jpg",
+        "description": "A sweet and tangy citrus fruit.",
+        "price": 3.0,
+        "uom": "kg"
+    },
+    {
+        "id": 28,
+        "name": "Guava",
+        "category": "Tropical",
+        "images": "img/best-product-4.jpg",
+        "description": "A tropical fruit with a sweet and aromatic flavor.",
+        "price": 4.0,
+        "uom": "kg"
+    },
+    {
+        "id": 29,
+        "name": "Nectarine",
+        "category": "Stone Fruit",
+        "images": "img/best-product-5.jpg",
+        "description": "A smooth-skinned fruit that's sweet and juicy.",
+        "price": 4.3,
+        "uom": "kg"
+    },
+    {
+        "id": 30,
+        "name": "Casaba Melon",
+        "category": "Melon",
+        "images": "img/best-product-6.jpg",
+        "description": "A sweet and mild-flavored melon.",
+        "price": 3.0,
+        "uom": "kg"
+    },
+    {
+        "id": 31,
+        "name": "Medlar",
+        "category": "Pome",
+        "images": "img/fruite-item-1.jpg",
+        "description": "A small fruit that's sweet when fully ripe.",
+        "price": 6.0,
+        "uom": "kg"
+    },
+    {
+        "id": 32,
+        "name": "Boysenberry",
+        "category": "Berry",
+        "images": "img/fruite-item-2.jpg",
+        "description": "A sweet and tart berry that's great for baking.",
+        "price": 8.5,
+        "uom": "kg"
+    },
+    {
+        "id": 33,
+        "name": "Kumquat",
+        "category": "Citrus",
+        "images": "img/fruite-item-3.jpg",
+        "description": "A small citrus fruit that's sweet and tangy.",
+        "price": 5.2,
+        "uom": "kg"
+    },
+    {
+        "id": 34,
+        "name": "Passion Fruit",
+        "category": "Tropical",
+        "images": "img/fruite-item-4.jpg",
+        "description": "A tropical fruit with a sweet and tangy flavor.",
+        "price": 7.0,
+        "uom": "kg"
+    },
+    {
+        "id": 35,
+        "name": "Peacharine",
+        "category": "Stone Fruit",
+        "images": "img/fruite-item-5.jpg",
+        "description": "A hybrid fruit that's sweet and juicy.",
+        "price": 5.0,
+        "uom": "kg"
+    },
+    {
+        "id": 36,
+        "name": "Canary Melon",
+        "category": "Melon",
+        "images": "img/fruite-item-6.jpg",
+        "description": "A sweet and aromatic melon with a bright yellow skin.",
+        "price": 3.5,
+        "uom": "kg"
+    },
+    {
+        "id": 37,
+        "name": "Loquat",
+        "category": "Pome",
+        "images": "img/best-product-1.jpg",
+        "description": "A small fruit with a sweet and tangy flavor.",
+        "price": 6.5,
+        "uom": "kg"
+    },
+    {
+        "id": 38,
+        "name": "Mulberry",
+        "category": "Berry",
+        "images": "img/best-product-2.jpg",
+        "description": "A sweet and juicy berry.",
+        "price": 9.0,
+        "uom": "kg"
+    },
+    {
+        "id": 39,
+        "name": "Pomelo",
+        "category": "Citrus",
+        "images": "img/best-product-3.jpg",
+        "description": "A large citrus fruit with a sweet and tangy flavor.",
+        "price": 3.8,
+        "uom": "kg"
+    },
+    {
+        "id": 40,
+        "name": "Lychee",
+        "category": "Tropical",
+        "images": "img/best-product-4.jpg",
+        "description": "A tropical fruit with a sweet and floral flavor.",
+        "price": 8.0,
+        "uom": "kg"
+    },
+    {
+        "id": 41,
+        "name": "Prune",
+        "category": "Stone Fruit",
+        "images": "img/best-product-5.jpg",
+        "description": "A dried plum that's sweet and chewy.",
+        "price": 6.2,
+        "uom": "kg"
+    },
+    {
+        "id": 42,
+        "name": "Santa Claus Melon",
+        "category": "Melon",
+        "images": "img/best-product-6.jpg",
+        "description": "A sweet and juicy melon that's perfect for summer.",
+        "price": 3.2,
+        "uom": "kg"
+    },
+    {
+        "id": 43,
+        "name": "Saskatoon Berry",
+        "category": "Berry",
+        "images": "img/fruite-item-1.jpg",
+        "description": "A sweet and nutty-flavored berry.",
+        "price": 10.0,
+        "uom": "kg"
+    },
+    {
+        "id": 44,
+        "name": "Ugli Fruit",
+        "category": "Citrus",
+        "images": "img/fruite-item-2.jpg",
+        "description": "A hybrid citrus fruit that's sweet and tangy.",
+        "price": 4.0,
+        "uom": "kg"
+    },
+    {
+        "id": 45,
+        "name": "Durian",
+        "category": "Tropical",
+        "images": "img/fruite-item-3.jpg",
+        "description": "A tropical fruit known for its strong aroma and creamy texture.",
+        "price": 15.0,
+        "uom": "kg"
+    },
+    {
+        "id": 46,
+        "name": "Damson",
+        "category": "Stone Fruit",
+        "images": "img/fruite-item-4.jpg",
+        "description": "A small and tart fruit often used in jams.",
+        "price": 5.5,
+        "uom": "kg"
+    },
+    {
+        "id": 47,
+        "name": "Winter Melon",
+        "category": "Melon",
+        "images": "img/fruite-item-5.jpg",
+        "description": "A mild-flavored melon often used in soups.",
+        "price": 2.2,
+        "uom": "kg"
+    },
+    {
+        "id": 48,
+        "name": "Crabapple",
+        "category": "Pome",
+        "images": "img/fruite-item-6.jpg",
+        "description": "A small and tart fruit often used in preserves.",
+        "price": 4.8,
+        "uom": "kg"
+    },
+    {
+        "id": 49,
+        "name": "Elderberry",
+        "category": "Berry",
+        "images": "img/best-product-1.jpg",
+        "description": "A small and tart berry often used in syrups and wines.",
+        "price": 11.0,
+        "uom": "kg"
+    },
+    {
+        "id": 50,
+        "name": "Buddha's Hand",
+        "category": "Citrus",
+        "images": "img/best-product-2.jpg",
+        "description": "A unique citrus fruit with a sweet and floral aroma.",
+        "price": 12.0,
+        "uom": "kg"
+    }
+]

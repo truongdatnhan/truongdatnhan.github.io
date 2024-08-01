@@ -1,0 +1,8 @@
+[
+    {"path": "/"},
+    {"path": "/contact"},
+    {"path": "/shop"},
+    {"path": "/detail"},
+    {"path": "/cart"},
+    {"path": "/checkout"}
+  ]
