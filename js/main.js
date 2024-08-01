@@ -71,16 +71,18 @@ import * as util from "./util.js";
   };
 
   const deleteItemCart = () => {
-    $("tr button").on("click", function() {
+    $("tr button").on("click", function () {
       const button = $(this);
-      const tr = this.closest('tr');
+      const tr = this.closest("tr");
       const id = tr.dataset.id;
 
-      const cart = JSON.parse(localStorage.getItem("cart")).filter(x => x.id != id);
+      const cart = JSON.parse(localStorage.getItem("cart")).filter(
+        (x) => x.id != id
+      );
       localStorage.setItem("cart", JSON.stringify(cart));
-      window.location.href = '/cart';
+      window.location.href = "/cart";
     });
-  }
+  };
 
   const updateCartQuantity = (length) => {
     const cartElement = document.getElementById("cartQuantity");
@@ -128,6 +130,66 @@ import * as util from "./util.js";
     });
   };
 
+  const formValidation = () => {
+    document.querySelector("form").addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      const formData = new FormData(ev.target);
+      console.log(formData);
+      const data = Object.fromEntries(formData.entries());
+      console.log(data);
+
+      if(data.firstName === null || data.firstName === undefined || data.firstName === '') {
+        alert('Cannot leave first name empty !');
+        return;
+      }
+
+      if(data.lastName === null || data.lastName === undefined || data.lastName === '') {
+        alert('Cannot leave last name empty !');
+        return;
+      }
+
+      if(data.address === null || data.address === undefined || data.address === '') {
+        alert('Cannot leave address empty !');
+        return;
+      }
+
+      if(data.city === null || data.city === undefined || data.city === '') {
+        alert('Cannot leave city empty !');
+        return;
+      }
+
+      if(data.country === null || data.country === undefined || data.country === '') {
+        alert('Cannot leave country empty !');
+        return;
+      }
+
+
+      if(data.zip === null || data.zip === undefined || data.zip === '') {
+        alert('Cannot leave zip empty !');
+        return;
+      }
+
+      if(data.mobile === null || data.mobile === undefined || data.mobile === '') {
+        alert('Cannot leave mobile empty !');
+        return;
+      }
+
+      if(data.email === null || data.email === undefined || data.email === '') {
+        alert('Cannot leave email empty !');
+        return;
+      }
+
+      if( !('payment') in data || data.payment === null || data.payment === undefined || data.payment === '') {
+        alert('Select payment method !');
+        return;
+      }
+
+      localStorage.clear();
+      window.location.href = "/thankyou";
+    });
+  };
+
+
   window.navigation.addEventListener("navigate", async (event) => {
     event.preventDefault();
     const path = util.url(event.destination.url).pathname;
@@ -159,9 +221,12 @@ import * as util from "./util.js";
         }
       } else if (route.path === "/shop") {
         navigate(await route.view(util.url(event.destination.url)));
-      } else if (route.path === '/cart') {
+      } else if (route.path === "/cart") {
         navigate(await route.view());
         deleteItemCart();
+      } else if (route.path === "/checkout") {
+        navigate(route.view());
+        formValidation();
       } else {
         navigate(await route.view());
       }

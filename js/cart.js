@@ -46,7 +46,7 @@ const cartTotal = (totalPrice) => {
                                 <div class="d-flex justify-content-between">
                                     <h5 class="mb-0 me-4">Shipping</h5>
                                     <div class="">
-                                        <p class="mb-0">Flat rate: $5.00</p>
+                                        <p class="mb-0">Flat rate: 5.00 CAD</p>
                                     </div>
                                 </div>
                             </div>

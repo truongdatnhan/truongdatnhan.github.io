@@ -2,13 +2,13 @@
     {
         "name": "Eric Cartman",
         "rating": 1,
-        "image": "",
+        "image": "img/eric_cartman.gif",
         "review": "RESPECT MY AUTHORITY!"
     },
     {
         "name": "MORTY",
         "rating": 5,
-        "image": "",
+        "image": "img/morty_smith.webp",
         "review": "AWWWH JEEZ!"
     }
 ]
