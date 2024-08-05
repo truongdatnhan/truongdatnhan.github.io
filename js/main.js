@@ -189,6 +189,12 @@ import * as util from "./util.js";
     });
   };
 
+  const initial = async () => {
+    navigate(await routes[0].view());
+    activateTestimonial();
+  };
+
+  await initial();
 
   window.navigation.addEventListener("navigate", async (event) => {
     event.preventDefault();
